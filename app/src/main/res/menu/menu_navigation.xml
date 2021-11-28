@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/beranda"
+        android:title="Beranda"
+        android:icon="@drawable/ico_home"/>
+
+    <item
+        android:id="@+id/kategori"
+        android:title="Kategori"
+        android:icon="@drawable/ico_category"/>
+
+    <item
+        android:id="@+id/qr"
+        android:title="Scan SQ"
+        android:icon="@drawable/ico_qr"/>
+
+    <item
+        android:id="@+id/about"
+        android:title="Tentang"
+        android:icon="@drawable/ico_info"/>
+
+    <item
+        android:id="@+id/cart"
+        android:title="Keranjang"
+        android:icon="@drawable/ico_cart"/>
+</menu>

@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".About">
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/teal_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:text="SALMEDIC  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:layout_weight="1"
+                android:textColor="@color/cardview_dark_background"
+                android:backgroundTint="@color/white"
+                android:gravity="left|center_vertical"
+                android:drawableLeft="@drawable/ico_search"
+                android:textAllCaps="false"
+                android:text="Pencarian ..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                app:cardCornerRadius="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="37dp"
+                android:layout_height="37dp">
+                <Button
+                    android:layout_gravity="center"
+                    android:background="@drawable/ico_favorite"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:backgroundTint="#D4AF37"/>
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="7dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_logos" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT SALMEDIC STORE"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="5sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salmedic Store merupakan toko alat kesehatan yang menyediakan berbagai produk alat kesehatan, alat kebutuhan rumah sakit, personal care, wound care."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_activity_main_first_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="250dp" />
+
+        <TextView
+            android:id="@+id/tv_activity_main_first_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="©Risal Risandi_19552011257"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+</RelativeLayout>
